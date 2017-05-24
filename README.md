@@ -1,8 +1,8 @@
 # conan-statsd-client
 
 [![Build Status](https://travis-ci.org/vthiery/conan-statsd-client.svg?branch=master)](https://travis-ci.org/vthiery/conan-statsd-client)
-[![Github Issues](https://img.shields.io/github/issues/vthiery/cpp-statsd-client.svg)](https://github.com/vthiery/conan-statsd-client/issues)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/vthiery/cpp-statsd-client.svg)](http://isitmaintained.com/project/vthiery/cpp-statsd-client "Average time to resolve an issue")
+[![Github Issues](https://img.shields.io/github/issues/vthiery/conan-statsd-client.svg)](https://github.com/vthiery/conan-statsd-client/issues)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/vthiery/conan-statsd-client.svg)](http://isitmaintained.com/project/vthiery/conan-statsd-client "Average time to resolve an issue")
 
 [Conan.io](https://conan.io/source/statsd-client/0.0.1/vthiery/stable) package for my [C++ StatsD Client](https://github.com/vthiery/cpp-statsd-client)
 
