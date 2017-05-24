@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/vthiery/conan-statsd-client.svg?branch=master)](https://travis-ci.org/vthiery/conan-statsd-client)
 
-# conan-rxcpp
+# conan-statsd-client
 
 [Conan.io](https://conan.io) package for my StatsD Client
 
