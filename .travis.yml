@@ -1,6 +1,6 @@
 os: linux
 services:
-       - docker
+    - docker
 sudo: required
 language: python
 env:
