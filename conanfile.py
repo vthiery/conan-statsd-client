@@ -1,8 +1,8 @@
 from conans import ConanFile
 
 class StatsdClient(ConanFile):
-    name = "statsd-client"
-    version = "0.0.2"
+    name = "statsdclient"
+    version = "0.0.1"
     license = "MIT"
     url = "https://github.com/vthiery/conan-statsd-client"
     author = "Vincent Thiery (vjmthiery@gmail.com)"
@@ -12,10 +12,6 @@ class StatsdClient(ConanFile):
 
     def source(self):
         self.run("git clone --recursive https://github.com/vthiery/cpp-statsd-client")
-
-    def build(self):
-        del self
-        # Do nothing - header only
 
     def package(self):
         header_dir = "include"
