@@ -2,7 +2,7 @@ from conans import ConanFile
 
 class StatsdClient(ConanFile):
     name = "statsdclient"
-    version = "0.0.1"
+    version = "0.0.2"
     license = "MIT"
     url = "https://github.com/vthiery/conan-statsd-client"
     author = "Vincent Thiery (vjmthiery@gmail.com)"
