@@ -5,7 +5,7 @@
 [![Github Issues](https://img.shields.io/github/issues/vthiery/conan-statsd-client.svg)](https://github.com/vthiery/conan-statsd-client/issues)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/vthiery/conan-statsd-client.svg)](http://isitmaintained.com/project/vthiery/conan-statsd-client "Average time to resolve an issue")
 
-[JFrog Bintray](https://bintray.com/vthiery/conan-packages/statsdclient%3Avthiery) package for my [C++ StatsD Client](https://github.com/vthiery/cpp-statsd-client)
+[Conan](https://bintray.com/vthiery/conan-packages/statsdclient%3Avthiery) package for my [C++ StatsD Client](https://github.com/vthiery/cpp-statsd-client)
 
 ## Usage
 
