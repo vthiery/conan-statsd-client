@@ -6,7 +6,7 @@ channel = os.getenv("CONAN_CHANNEL", "stable")
 username = os.getenv("CONAN_USERNAME", "vthiery")
 
 
-class RxcppTestConan(ConanFile):
+class StatsdClientTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     requires = "statsdclient/0.0.2@%s/%s" % (username, channel)
     generators = "cmake"
