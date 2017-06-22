@@ -12,7 +12,7 @@ class StatsdClient(ConanFile):
         self.run("git clone --recursive https://github.com/vthiery/cpp-statsd-client")
 
     def package(self):
-        self.copy("*.hpp", dst="include")
+        self.copy("*.hpp", dst="include", src="cpp-statsd-client/src", keep_path=True)
         self.copy("LICENSE.md")
 
     def package_info(self):
