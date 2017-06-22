@@ -13,6 +13,7 @@ class StatsdClient(ConanFile):
 
     def package(self):
         self.copy("*.hpp", dst="include")
+        self.copy("LICENSE.md")
 
     def package_info(self):
         self.cpp_info.libdirs = []
