@@ -1,19 +1,21 @@
-from conans import ConanFile
+from conans import ConanFile, tools
 
-class StatsdClient(ConanFile):
+class StatsdClientConan(ConanFile):
     name = "statsdclient"
-    version = "0.0.2"
-    description = "Statsd Client from https://github.com/vthiery/cpp-statsd-client"
+    version = "0.0.4"
+    description = "A header-only StatsD client implemented in C++ from https://github.com/vthiery/cpp-statsd-client"
     license = "MIT"
     url = "https://github.com/vthiery/conan-statsd-client"
     author = "Vincent Thiery (vjmthiery@gmail.com)"
 
     def source(self):
-        self.run("git clone --recursive https://github.com/vthiery/cpp-statsd-client")
+        tools.download("https://github.com/vthiery/cpp-statsd-client/archive/%s.zip" % self.version, "cpp-statsd-client.zip")
+        tools.unzip("cpp-statsd-client.zip")
 
     def package(self):
-        self.copy("*.hpp", dst="include", src="cpp-statsd-client/src", keep_path=True)
-        self.copy("LICENSE.md")
+        zipname = "cpp-statsd-client-%s" % self.version
+        self.copy("*.hpp", dst="include", src="%s/src" % zipname)
+        self.copy("%s/LICENSE" % zipname)
 
     def package_info(self):
         self.cpp_info.libdirs = []

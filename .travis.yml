@@ -1,19 +1,25 @@
-os: linux
-services:
-    - docker
-sudo: required
-language: python
 env:
-    global:
-        - CONAN_REFERENCE: "statsdclient/0.0.2"
-        - CONAN_USERNAME: "vthiery"
-        - CONAN_CHANNEL: "stable"
-        - CONAN_UPLOAD: "https://api.bintray.com/conan/vthiery/conan-packages"
+   global:
+     - CONAN_REFERENCE: "statsdclient/0.0.4"
+     - CONAN_USERNAME: "vthiery"
+     - CONAN_CHANNEL: "stable"
+     - CONAN_UPLOAD: "https://api.bintray.com/conan/vthiery/conan-packages"
 
-    matrix:
-        - CONAN_GCC_VERSIONS=6.3 CONAN_DOCKER_IMAGE=lasote/conangcc63
+linux: &linux
+   os: linux
+   sudo: required
+   language: python
+   python: "3.6"
+   services:
+     - docker
+
+matrix:
+   include:
+      - <<: *linux
+        env: CONAN_GCC_VERSIONS=7 CONAN_DOCKER_IMAGE=lasote/conangcc7 CMAKE_CXX_FLAGS="${CMAKE_CXX_FLAGS} -std=c++17"
 
 install:
-    - ./.travis/install.sh
+  - ./.travis/install.sh
+
 script:
-    - ./.travis/run.sh
+  - ./.travis/run.sh
