@@ -1,6 +1,6 @@
 env:
    global:
-     - CONAN_REFERENCE: "statsdclient/0.0.4"
+     - CONAN_REFERENCE: "statsdclient/0.0.5"
      - CONAN_USERNAME: "vthiery"
      - CONAN_CHANNEL: "stable"
      - CONAN_UPLOAD: "https://api.bintray.com/conan/vthiery/conan-packages"
