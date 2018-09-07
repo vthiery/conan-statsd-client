@@ -9,7 +9,7 @@
 
 ## Usage
 
-Add `statsdclient/0.0.5@vthiery/stable` in the list of requirements of your conanfile. See [how to use a conanfile.py](http://docs.conan.io/en/latest/mastering/conanfile_py.html) for more information.
+Add `statsdclient/x.y.z@vthiery/stable` in the list of requirements of your conanfile. See [how to use a conanfile.py](http://docs.conan.io/en/latest/mastering/conanfile_py.html) for more information.
 
 ## Packaging
 
